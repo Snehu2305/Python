@@ -1,3 +1,5 @@
+# file = open("python.txt", 'x')
+
 file1 = open("python.txt", "r")
 content = file1.read()
 print("Reading a file: ", content)
@@ -16,7 +18,7 @@ for line in f:
 f.close()
 
 file = open("python.txt", "a")
-file.write("I am writing this new line in this")
+file.write("\nI am writing this new line in this")
 file.close()
 
 with open("python.txt", "r") as f1:
@@ -31,7 +33,3 @@ with open("Python.txt", "w") as file2:
 with open("Python.txt", "r") as fi:
     line = fi.readlines()
     print(line)
-
-
-
-
