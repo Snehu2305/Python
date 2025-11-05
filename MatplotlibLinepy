@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+
+days = ["mon", 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']
+city1 = [30, 32, 31, 29, 28, 31, 35]
+city2 = [25, 27, 26, 28, 29, 28, 32]
+
+plt.plot(days, city1, color='skyblue', marker='*')
+plt.plot(days, city2, color='brown', marker='d')
+
+plt.title("Temperature of two cities")
+plt.xlabel('days')
+plt.ylabel('temperature')
+
+plt.show()
+plt.legend()
